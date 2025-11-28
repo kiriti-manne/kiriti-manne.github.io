@@ -33,7 +33,15 @@ const Navbar = () => {
       }`}
     >
       <div className="container px-6 py-4">
-        <div className="flex items-center justify-end gap-8">
+        <div className="flex items-center justify-between">
+          {/* Logo and title */}
+          <a href="#" className="flex items-center gap-3">
+            <img src="/favicon.svg" alt="Logo" className="w-6 h-6" />
+            <span className="text-sm font-semibold tracking-wider text-foreground">GROWTH ADVISORY</span>
+          </a>
+          
+          {/* Navigation items */}
+          <div className="flex items-center gap-8">
           <ul className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <li key={item.href}>
@@ -61,6 +69,7 @@ const Navbar = () => {
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
+          </div>
         </div>
       </div>
 
