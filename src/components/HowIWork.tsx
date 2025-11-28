@@ -62,10 +62,10 @@ const HowIWork = () => {
             Let's discuss how I can help you build predictable, scalable pipeline and revenue.
           </p>
           <a 
-            href="mailto:hello@example.com"
-            className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity"
+            href="mailto:kiritimanne@gmail.com"
+            className="text-primary font-semibold hover:underline"
           >
-            Start a Conversation
+            Email me at kiritimanne@gmail.com
           </a>
         </div>
       </div>
