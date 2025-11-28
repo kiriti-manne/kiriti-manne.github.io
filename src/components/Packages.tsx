@@ -24,7 +24,7 @@ const Packages = () => {
         "Support across inbound and outbound",
         "Slack access"
       ],
-      highlighted: true
+      highlighted: false
     },
     {
       name: "Option C",
