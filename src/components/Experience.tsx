@@ -31,7 +31,7 @@ const Experience = () => {
               Nearly a decade of GTM experience
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              From seed-stage startups to post-IPO enterprise, I combine clear GTM strategy, hands-on execution, and real data/AI technical depth to help companies build revenue systems that actually scale.
+              From seed-stage startups to post-IPO, expertise spans GTM strategy, execution, and data/AI to build, optimize and scale growth.
             </p>
             <div className="flex items-center gap-6 text-sm text-muted-foreground">
               <span className="flex items-center gap-2">
