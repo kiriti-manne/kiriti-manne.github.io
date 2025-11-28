@@ -15,7 +15,7 @@ const Navbar = () => {
 
   const navItems = [
     { label: "Experience", href: "#experience" },
-    { label: "Services", href: "#services" },
+    { label: "Capabilities", href: "#services" },
     { label: "Advisory Packages", href: "#packages" },
     { label: "Approach", href: "#how-i-work" },
   ];
