@@ -60,7 +60,7 @@ const Services = () => {
       <div className="container max-w-6xl">
         <div className="text-center mb-16">
           <p className="text-primary font-medium tracking-wide uppercase text-sm mb-4">
-            What I Do
+            Capabilities
           </p>
           <h2 className="text-4xl md:text-5xl font-serif mb-6">
             Comprehensive GTM Services
