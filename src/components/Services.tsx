@@ -79,7 +79,7 @@ const Services = () => {
           
           <div className="grid md:grid-cols-3 gap-6">
             {Object.entries(gtmServices).map(([key, section]) => (
-              <div key={key} className="p-6 rounded-xl card-gradient border border-border">
+              <div key={key} className="p-6 rounded-xl card-gradient border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300">
                 <div className="mb-4">
                   <h4 className="font-semibold text-xl">{section.title}</h4>
                   <p className="text-primary text-base">{section.subtitle}</p>
