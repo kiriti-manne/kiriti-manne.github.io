@@ -1,13 +1,13 @@
 import lightlabsLogo from "@/assets/logos/lightlabs_logo.png";
-import tenortherapyLogo from "@/assets/logos/tenortherapy_logo.png";
-import webdoxLogo from "@/assets/logos/webdox_logo_grey.png";
+import tenorLogo from "@/assets/logos/tenor_transparent.png";
+import webdoxLogo from "@/assets/logos/webdox_transparent.png";
 import samsaraLogo from "@/assets/logos/samsara_logo.png";
 
 const logos = [
-  { src: lightlabsLogo, alt: "Light Labs", invertBg: false },
-  { src: tenortherapyLogo, alt: "Tenor Therapy", invertBg: true },
-  { src: webdoxLogo, alt: "Webdox", invertBg: false },
-  { src: samsaraLogo, alt: "Samsara", invertBg: false },
+  { src: lightlabsLogo, alt: "Light Labs", needsFilter: true },
+  { src: tenorLogo, alt: "Tenor", needsFilter: false, bigger: true },
+  { src: webdoxLogo, alt: "Webdox", needsFilter: false },
+  { src: samsaraLogo, alt: "Samsara", needsFilter: true },
 ];
 
 const SocialProof = () => {
@@ -18,13 +18,10 @@ const SocialProof = () => {
           key={logo.alt}
           src={logo.src}
           alt={logo.alt}
-          className="h-6 md:h-8 max-w-[120px] md:max-w-[140px] w-auto object-contain transition-all duration-300 opacity-50 hover:opacity-80"
-          style={{
-            filter: logo.invertBg 
-              ? "grayscale(100%) invert(1) brightness(2)" 
-              : "grayscale(100%) brightness(0) invert(1)",
-            mixBlendMode: "lighten",
-          }}
+          className={`${logo.bigger ? 'h-8 md:h-12' : 'h-6 md:h-8'} max-w-[120px] md:max-w-[160px] w-auto object-contain transition-all duration-300 opacity-60 hover:opacity-90`}
+          style={logo.needsFilter ? {
+            filter: "grayscale(100%) brightness(0) invert(1)",
+          } : undefined}
         />
       ))}
     </div>
