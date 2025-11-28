@@ -65,9 +65,6 @@ const Services = () => {
           <h2 className="text-4xl md:text-5xl font-serif mb-6">
             Comprehensive GTM Services
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            End-to-end design and execution of the revenue engine across awareness, demand, pipeline and revenue.
-          </p>
         </div>
 
         {/* Full-Funnel GTM */}
