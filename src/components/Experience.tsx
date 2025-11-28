@@ -20,7 +20,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className="py-24 px-6">
+    <section id="experience" className="py-24 px-6">
       <div className="container max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>

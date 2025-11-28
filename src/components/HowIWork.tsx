@@ -25,7 +25,7 @@ const HowIWork = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 px-6 bg-secondary/30">
+    <section id="how-i-work" className="py-24 px-6 bg-secondary/30">
       <div className="container max-w-4xl">
         <div className="text-center mb-12">
           <p className="text-primary font-medium tracking-wide uppercase text-sm mb-4">
