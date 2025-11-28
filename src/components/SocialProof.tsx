@@ -12,15 +12,15 @@ const logos = [
 
 const SocialProof = () => {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+    <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
       {logos.map((logo) => (
         <img
           key={logo.alt}
           src={logo.src}
           alt={logo.alt}
-          className="h-8 md:h-10 w-auto object-contain transition-opacity duration-300 opacity-60 hover:opacity-100"
+          className="h-6 md:h-8 max-w-[120px] md:max-w-[140px] w-auto object-contain transition-all duration-300 opacity-50 hover:opacity-80"
           style={{
-            filter: "grayscale(100%) brightness(200%)",
+            filter: "grayscale(100%) brightness(0) invert(1)",
           }}
         />
       ))}
