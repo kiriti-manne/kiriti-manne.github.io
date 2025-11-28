@@ -5,22 +5,22 @@ const HowIWork = () => {
     {
       icon: Users,
       title: "Extension of Your Team",
-      description: "I work as an extension of you and/or your GTM leadership"
+      description: "Embedded as an extension of you or your GTM leadership."
     },
     {
       icon: Workflow,
       title: "Flexible Approach",
-      description: "Depending on need and priorities, I flex between strategy, execution, and technical problem-solving"
+      description: "Support flexes between strategy, execution, and technical problem-solving based on priorities."
     },
     {
       icon: Target,
       title: "Revenue-Oriented",
-      description: "Everything is oriented toward building predictable and scalable pipeline and revenue"
+      description: "All work is anchored in building predictable pipeline and scalable revenue."
     },
     {
       icon: MessageSquare,
-      title: "Multiple Formats",
-      description: "I work live (video call, phone) or async (email, Slack, docs, Looms, etc.)"
+      title: "Collaboration",
+      description: "Live (video or phone) or async (Slack, email, docs, Looms, etc.)"
     }
   ];
 
