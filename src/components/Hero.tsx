@@ -1,3 +1,5 @@
+import SocialProof from "./SocialProof";
+
 const Hero = () => {
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center hero-gradient overflow-hidden">
@@ -33,6 +35,10 @@ const Hero = () => {
             >
               Explore Services
             </a>
+          </div>
+          
+          <div className="mt-16 animate-fade-up-delay-3">
+            <SocialProof />
           </div>
         </div>
       </div>
