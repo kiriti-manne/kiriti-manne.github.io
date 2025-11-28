@@ -51,7 +51,7 @@ const Services = () => {
     },
     {
       category: "AI & Automation",
-      items: ["Automated account research", "Data enrichment workflows", "Trigger-based automation", "AI-assisted sales workflows"]
+      items: ["Automated account research", "Data enrichment workflows", "Trigger-based automation", "Other AI-assisted sales workflows"]
     }
   ];
 
