@@ -1,4 +1,4 @@
-name: Build and Deploy Vite app to GitHub Pages
+name: Build and Push Vite app to pre-deploy
 
 on:
   push:
@@ -27,9 +27,9 @@ jobs:
       - name: Build Vite app
         run: npm run build
 
-      - name: Deploy to gh-pages
+      - name: Deploy build output to pre-deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages   # 👈 the branch GitHub Pages serves
-          folder: dist       # 👈 Vite build output
-          clean: true        # optional: wipe old files before deploy
+          branch: pre-deploy   # branch that gets the built static files
+          folder: dist
+          clean: true
