@@ -1,13 +1,13 @@
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "Working with Kiriti has strengthened Webdox's revenue engine. His strategic thinking and guidance reshaped how we approach growth across countries, from outbound and inbound to pipeline progression and execution. He brings clarity, structure, and pattern recognition that have made him a critical thought partner for our team.",
+      quote: "Working with Kiriti has strengthened Webdox's revenue engine. His strategic thinking and guidance reshaped how we approach growth across countries, from outbound and inbound to pipeline progression and execution.\n\nHe brings clarity, structure, and pattern recognition that have made him a critical thought partner for our team.",
       name: "Jose Manuel",
       title: "CEO",
       company: "Webdox"
     },
     {
-      quote: "Kiriti brought clarity and structure to our outreach motion. He helped us diagnose issues across the funnel and build a repeatable experimentation process that doubled our conversion rates within weeks. His combination of strategy and tactical depth has been invaluable for Tenor.",
+      quote: "Kiriti brought clarity and structure to our outreach motion. He helped us diagnose issues across the funnel and build a repeatable experimentation process that doubled our conversion rates within weeks.\n\nHis combination of strategy and tactical depth has been invaluable for Tenor.",
       name: "Olivia",
       title: "CEO",
       company: "Tenor"
@@ -30,7 +30,7 @@ const Testimonials = () => {
               key={index}
               className="p-6 rounded-xl card-gradient border border-border hover:border-primary/30 transition-colors"
             >
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6 italic">
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6 italic whitespace-pre-line">
                 "{testimonial.quote}"
               </p>
               <div>
