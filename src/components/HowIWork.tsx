@@ -59,7 +59,8 @@ const HowIWork = () => {
         <div id="contact" className="text-center p-10 rounded-2xl border border-primary/20 bg-primary/5">
           <h3 className="text-2xl font-serif mb-4">Ready to scale your revenue engine?</h3>
           <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-            Let's set up a 15 minute diagnostic call.{" "}
+            Let's set up a 15 minute diagnostic call.
+            <br />
             <a 
               href="mailto:kiritimanne@gmail.com"
               className="text-primary font-semibold hover:underline"
