@@ -1,19 +1,24 @@
-name: Build and Push Vite app to pre-deploy
+name: Deploy Vite app from prod to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "prod" ]
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout source
+      - name: Checkout prod branch
         uses: actions/checkout@v4
 
       - name: Setup Node
@@ -27,9 +32,17 @@ jobs:
       - name: Build Vite app
         run: npm run build
 
-      - name: Deploy build output to pre-deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload dist as GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          branch: pre-deploy   # branch that gets the built static files
-          folder: dist
-          clean: true
+          path: ./dist    # Vite build output
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
