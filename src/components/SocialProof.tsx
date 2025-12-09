@@ -2,12 +2,14 @@ import lightlabsLogo from "@/assets/logos/lightlabs_logo.png";
 import tenorLogo from "@/assets/logos/tenor_transparent.png";
 import webdoxLogo from "@/assets/logos/webdox_transparent.png";
 import samsaraLogo from "@/assets/logos/samsara_logo.png";
+import commodityAiLogo from "@/assets/logos/commodity_ai_logo.png";
 
 const logos = [
   { src: lightlabsLogo, alt: "Light Labs", filter: "standard" },
   { src: tenorLogo, alt: "Tenor", filter: "standard", size: "large" },
   { src: webdoxLogo, alt: "Webdox", filter: "standard", size: "medium" },
   { src: samsaraLogo, alt: "Samsara", filter: "standard" },
+  { src: commodityAiLogo, alt: "Commodity AI", filter: "standard", size: "medium" },
 ];
 
 const getFilterStyle = (filter: string) => {
