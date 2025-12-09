@@ -2,12 +2,17 @@ import lightlabsLogo from "@/assets/logos/lightlabs_logo.png";
 import tenorLogo from "@/assets/logos/tenor_transparent.png";
 import webdoxLogo from "@/assets/logos/webdox_transparent.png";
 import samsaraLogo from "@/assets/logos/samsara_logo.png";
+import commodityAiLogo from "@/assets/logos/commodity_ai_logo.png";
 
-const logos = [
+const topRowLogos = [
   { src: lightlabsLogo, alt: "Light Labs", filter: "standard" },
   { src: tenorLogo, alt: "Tenor", filter: "standard", size: "large" },
-  { src: webdoxLogo, alt: "Webdox", filter: "standard", size: "medium" },
   { src: samsaraLogo, alt: "Samsara", filter: "standard" },
+];
+
+const bottomRowLogos = [
+  { src: commodityAiLogo, alt: "Commodity AI", filter: "standard" },
+  { src: webdoxLogo, alt: "Webdox", filter: "standard", size: "medium" },
 ];
 
 const getFilterStyle = (filter: string) => {
@@ -46,19 +51,35 @@ const getSizeClasses = (size?: string) => {
 
 const SocialProof = () => {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
-      {logos.map((logo) => {
-        const style = getFilterStyle(logo.filter);
-        return (
-          <img
-            key={logo.alt}
-            src={logo.src}
-            alt={logo.alt}
-            className={`${getSizeClasses(logo.size)} w-auto object-contain transition-all duration-300 hover:opacity-90`}
-            style={style}
-          />
-        );
-      })}
+    <div className="flex flex-col items-center gap-1 md:gap-2">
+      <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
+        {topRowLogos.map((logo) => {
+          const style = getFilterStyle(logo.filter);
+          return (
+            <img
+              key={logo.alt}
+              src={logo.src}
+              alt={logo.alt}
+              className={`${getSizeClasses(logo.size)} w-auto object-contain transition-all duration-300 hover:opacity-90`}
+              style={style}
+            />
+          );
+        })}
+      </div>
+      <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
+        {bottomRowLogos.map((logo) => {
+          const style = getFilterStyle(logo.filter);
+          return (
+            <img
+              key={logo.alt}
+              src={logo.src}
+              alt={logo.alt}
+              className={`${getSizeClasses(logo.size)} w-auto object-contain transition-all duration-300 hover:opacity-90`}
+              style={style}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
