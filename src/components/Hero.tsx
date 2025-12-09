@@ -11,7 +11,7 @@ const Hero = () => {
       {/* Glow orb */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[400px] rounded-full bg-primary/10 blur-[120px]" />
       
-      <div className="container relative z-10 px-6 py-20">
+      <div className="container relative z-10 px-6 pt-28 pb-20">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif leading-[1.1] mb-8 animate-fade-up-delay-1">
             Build Revenue Systems <br />
