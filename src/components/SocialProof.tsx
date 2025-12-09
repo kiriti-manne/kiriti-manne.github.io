@@ -51,7 +51,7 @@ const getSizeClasses = (size?: string) => {
 
 const SocialProof = () => {
   return (
-    <div className="flex flex-col items-center gap-2 md:gap-3">
+    <div className="flex flex-col items-center gap-1 md:gap-2">
       <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
         {topRowLogos.map((logo) => {
           const style = getFilterStyle(logo.filter);
